@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="img/weather02-512.png">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Weather App</title>
+</head>
+<body id="item"> 
+
+    <section id="loading">
+        <span class="loader"></span>
+    </section>
+    <div id="weather" class="weatherData">
+    <div class="container mt-5 mb-5">
+        <div class="formSearch ms-4">
+            <input id="search" type="text" class="form-control border-0 rounded-4" placeholder="Enter your location..." >
+        </div>
+    <div class="row justify-content-around mt-5">
+        <div id="informationItem" class="information col-md-5 text-center p-5 mt-5 rounded-5">
+            <h1 id="city" class="mt-3 fw-bolder"></h1>
+            <p class="fw-medium" id="locationDetails"></p>
+            <p id="date"></p>
+            
+        </div>
+        <div id="informationItem2" class="information col-md-5 p-5 mt-5 rounded-5">
+            <img src="" id="todayImg" alt="">
+            <p class="fs-1 fw-bolder">
+                <span id="todayTemp"></span>
+                <span id="Temp"><sup>o</sup> C</span>
+            </p>
+            <p id="condition" class="fw-medium"></p>
+            <div class="icons mt-4 d-flex m-0">
+                <i id="iconPress" class="fas fa-tachometer-alt mt-1"></i>
+                <p id="pressure" class="ms-1 me-3"></p>
+                <i id="iconHumi" class="fas fa-tint mt-1 me-1"></i>
+                <p id="humidity" class="ms-1 me-3"></p>
+                <i id="iconWind" class="fas fa-wind mt-1 me-1"></i>
+                <p id="wind" class="me-3"></p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="text">
+    <p class="text-center fs-6">Made by <span>Amr Khaled</span></p>
+  </div>
+</div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
